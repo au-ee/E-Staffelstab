@@ -68,10 +68,27 @@ var source = new ol.source.Vector();
 
 var markers = {};
 
+var vectorStyle = new ol.style.Style({
+	stroke: new ol.style.Stroke({
+		color: 'red',
+		width: 8,
+		opacity: 0.5
+	})
+});
+
+var track = new ol.source.Vector({
+      url: 'track.gpx',
+      format: new ol.format.GPX()
+  });
+
 var map = new ol.Map({
     layers: [
         new ol.layer.Tile({
             source: new ol.source.OSM()
+        }),
+        new ol.layer.Vector({
+            source: track,
+            style: vectorStyle
         }),
         new ol.layer.Vector({
             source: source
