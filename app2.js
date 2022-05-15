@@ -64,6 +64,33 @@ var style = function (label) {
     });
 };
 
+var stylePoi = function (label) {
+    return new ol.style.Style({
+        image: new ol.style.Circle({
+            fill: new ol.style.Fill({
+                color: 'black'
+            }),
+            stroke: new ol.style.Stroke({
+                color: 'black',
+                width: 1
+            }),
+            radius: 3
+        }),
+        text: new ol.style.Text({
+            text: label,
+            fill: new ol.style.Fill({
+                color: 'black'
+            }),
+            stroke: new ol.style.Stroke({
+                color: 'white',
+                width: 2
+            }),
+            font: '10px sans-serif',
+            offsetY: -16
+        })
+    });
+};
+
 var source = new ol.source.Vector();
 
 var markers = {};
@@ -100,6 +127,26 @@ var map = new ol.Map({
         zoom: 13
     })
 });
+
+function addPoi(name, latitude, longitude) {
+	var point = new ol.geom.Point(ol.proj.fromLonLat([longitude, latitude]));
+        var poi = new ol.Feature(point);
+        poi.setStyle(stylePoi(name));
+        track.addFeature(poi);
+}
+
+addPoi('Start', 48.603822, 8.909258);
+addPoi('Wechselstelle  1',    48.589917,   8.877117);
+addPoi('Wechselstelle  2',    48.52925,    8.925717);
+addPoi('Wechselstelle  3',    48.461867,   8.898017);
+addPoi('Wechselstelle  4',    48.442783,   8.800033);
+addPoi('Wechselstelle  5',    48.443033,   8.689617);
+addPoi('Wechselstelle  6',    48.389433,   8.6736);
+addPoi('Wechselstelle  7',    48.322583,   8.593867);
+addPoi('Wechselstelle  8',    48.253783,   8.6021);
+addPoi('Wechselstelle  9',    48.196517,   8.61535);
+addPoi('Ziel',         48.179201,   8.624889);
+
 
 var ajax = function (method, url, callback) {
     var xhr = new XMLHttpRequest();
