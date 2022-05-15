@@ -18,3 +18,15 @@ Bauteile:
 - Tesa-Baumwoll-Isolierband zur Polsterung der Platine im Gehäuse
 - großer Schrumpfschlauch, um die Platine vor äußeren Einflüssen zu schützen
 
+Hardware-Bau:
+
+![Platine](platine.jpg)
+
+- Tracker aus Gehäuse ausbauen
+- Kabel weg löten
+- Pufferbatterie weg löten
+- Kabel mit Buchse für den Weitbereichs-Spannungseingang an "V" und "G" anlöten
+- Kabel mit Buchse für 3,7V-Akku an +/- Bat anlöten
+- Schrumpfschlauch um Tracker anbringen
+- GPS-Antenne freilegen
+- An zwei Stellen mit Baumwollband so dick machen, dass Platine im Rohr hält
