@@ -4,7 +4,7 @@
 
 Projektdokukumentation zum E-Staffelstab, der beim "Staffelläufle 2022" zum Einsatz kam.
 
-![Einzelteile](Einzelteile.jpg)
+![Einzelteile](Einzelteile.jpg | width=200)
 
 Bauteile:
 
