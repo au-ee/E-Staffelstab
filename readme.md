@@ -1,6 +1,10 @@
 # E-Staffelstab
 
+![Der fertige Staffelstab](staffelstab.jpg)
+
 Projektdokukumentation zum E-Staffelstab, der beim "Staffelläufle 2022" zum Einsatz kam.
+
+![Einzelteile](Einzelteile.jpg)
 
 Bauteile:
 
@@ -13,3 +17,4 @@ Bauteile:
 - SIM-Karte mit Datenvolumen und der Möglichkeit zum SMS-Versand/Empfang
 - Tesa-Baumwoll-Isolierband zur Polsterung der Platine im Gehäuse
 - großer Schrumpfschlauch, um die Platine vor äußeren Einflüssen zu schützen
+
