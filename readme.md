@@ -88,6 +88,12 @@ Nach der Installation ist Traccar für Benutzer per http auf Port 8082/TCP errei
   }
 ```
 
+### Einrichten des Trackers
+
+Je nach Tracker muss man IP-Adresse und Port des Traccar-Servers konfigurieren. Die Anleitung hierzu sollte dem Tracker beiliegen. Beim hier verwendeten geschah das über Steuerbefehle, die man per SMS senden musste.
+
+Die Übertragungsfrequenz wurde auf einen Ortungspunkt alle 10 Sekunden - auch ohne aktives Zündsignal - gesetzt.
+
 ### Anzeige der Karte
 
 Bei Traccar ist eine beispielhafte Kartendarstellung als Statische Webseite enthalten, welche den Websocket nutzt, um Geräte anzuzeigen. Dieses Beispiel von `/opt/traccar/web/simple' diente als Vorlage, um die eigene Kartenanzeige zu verwirklichen. Aufgrund der kurzen Zeit wurde die Seite so gestaltet, dass sie die Strecke aus dem GPS-Track und Wechselstellen anzeigt. Der Staffelstab wird als einziges getracktes Objekt angezeigt und die Karte zentriert bei jedem Update, welches über den Web Socket empfangen wird auf diesen Punkt.
