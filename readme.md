@@ -93,3 +93,5 @@ Nach der Installation ist Traccar für Benutzer per http auf Port 8082/TCP errei
 Bei Traccar ist eine beispielhafte Kartendarstellung als Statische Webseite enthalten, welche den Websocket nutzt, um Geräte anzuzeigen. Dieses Beispiel von `/opt/traccar/web/simple' diente als Vorlage, um die eigene Kartenanzeige zu verwirklichen. Aufgrund der kurzen Zeit wurde die Seite so gestaltet, dass sie die Strecke aus dem GPS-Track und Wechselstellen anzeigt. Der Staffelstab wird als einziges getracktes Objekt angezeigt und die Karte zentriert bei jedem Update, welches über den Web Socket empfangen wird auf diesen Punkt.
 
 Implementierung der Tracking-Seite: [tracking](./tracking/)
+
+![Tracking-Seite](tracking-seite.png)
